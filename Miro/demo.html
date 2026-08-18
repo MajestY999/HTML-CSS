@@ -6,19 +6,43 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="https://www.youtube.com/@PurpleSchool" method="get">
+    <form action="/test">
       <div>
         <label for="query"></label>
-        <input type="text" id="query" name="search_query" placeholder="Запрос" />
+        <input
+          type="text"
+          id="query"
+          name="search_query"
+          placeholder="Запрос"
+        />
+      </div>
+      <div>
+        <label for="agree">Согласен с обработкой данных</label>
+        <input type="checkbox" name="agree" id="agree" />
+      </div>
+      <div>
+        <input type="radio" name="search" id="all" value="all" />
+        <label for="all">Поиск повсюду</label>
+      </div>
+      <div>
+        <input type="radio" name="search" id="youtube" value="youtube" />
+        <!--значение value  помогает нам помнять что мы выбрали и оно показыватеся в поискоовй строке-->
+        <label for="youtube">Поиск на youtube</label>
+      </div>
+      <div>
+        <label for="topic">Тематика</label>
+        <select name="topic" id="topic">
+          <option value="1">Все</option>
+          <optgroup label="Популярные">
+            <option value="2">Животная</option>
+            <option value="3" selected>Разработка</option>
+          </optgroup>
+          <!--В эту группу помещаются опции которые нам необходимы.-->
+          <!--Свойство selected делает выбранную категорию первой по умолчаию(первой то есть котрая будет выходить в списке первой)-->
+          <!--Является специальным тегом для  select и вложить специальные теги -->
+        </select>
       </div>
       <button>Искать на youtube</button>
     </form>
   </body>
 </html>
-
-<!--Это тот путь куда мы сказали отправлять нашу форму. Локально мы пытемся на папку/ссылку тест-->
-<!--Значение параметра = значения нет, а есть только у цвета потому что есть чтото по умолчанию-->
-<!--  http://127.0.0.1:5500/test?hid=&email=&password=&birthyDate=&color=%23000000-->
-<!--http://127.0.0.1:5500/test?hid=&email=artem%40gmail.com&password=12345&birthyDate=2026-08-15&color=%23092fec-->
-<!--name должен быть у каждого параметр акоторых мы хоти обрабатывать.-->
-<!--Это все query параметры которые собираются после того как мы нажали на кнопку которая находится в форме после того как заполнили все пустые значения-->
