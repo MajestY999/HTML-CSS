@@ -6,15 +6,24 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="/test">
+    <form action="#">
       <div>
         <label for="query"></label>
         <input
           type="text"
           id="query"
+          title="Введите только цифры"
           name="search_query"
           placeholder="Запрос"
-        />
+          required    
+          minlength="3"
+          maxlength="20"
+             
+            />
+              <!-- pattern="/^\d+$/"  -->
+         <!-- required  - означает что это обяательное поле и без заполнения не даст отправить например сообщение-->
+          <input type="email" name="email" id="">
+          <input type="url" name="url" id="">
       </div>
       <div>
         <label for="agree">Согласен с обработкой данных</label>
