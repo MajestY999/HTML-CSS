@@ -6,70 +6,55 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>Свяжитесь со мной</h1>
     <form action="#">
       <div>
-        <label for="query"></label>
+        <img src="./images/message.svg" alt="Email" />
+        <label for="email">E-mail</label>
         <input
-          type="text"
-          id="query"
-          title="Введите только цифры"
-          name="search_query"
-          placeholder="Запрос"
-          required    
-          minlength="3"
-          maxlength="20"
-             
-            />
-              <!-- pattern="/^\d+$/"  -->
-         <!-- required  - означает что это обяательное поле и без заполнения не даст отправить например сообщение-->
-          <input type="email" name="email" id="">
-          <input type="url" name="url" id="">
-      </div>
-      <div>
-        <label for="agree">Согласен с обработкой данных</label>
-        <input type="checkbox" name="agree" id="agree" />
-      </div>
-      <div>
-        <input type="radio" name="search" id="all" value="all" />
-        <label for="all">Поиск повсюду</label>
-      </div>
-      <div>
-        <input type="radio" name="search" id="youtube" value="youtube" />
-        <!--значение value  помогает нам помнять что мы выбрали и оно показыватеся в поискоовй строке-->
-        <label for="youtube">Поиск на youtube</label>
-      </div>
-      <div>
-        <label for="topic">Тематика</label>
-        <select name="topic" id="topic">
-          <option value="1">Все</option>
-
-          <optgroup label="Популярные">
-            <option value="2">Животная</option>
-            <option value="3" selected>Разработка</option>
-          </optgroup>
-          <!--В эту группу помещаются опции которые нам необходимы.-->
-          <!--Свойство selected делает выбранную категорию первой по умолчаию(первой то есть котрая будет выходить в списке первой)-->
-          <!--Является специальным тегом для  select и вложить специальные теги -->
-        </select>
-      </div>
-      <div>
-        <label for="volume ">Оценка</label>
-        <input
-          type="range"
-          name="volume"
-          id="volume"
-          min="0"
-          max="10"
-          step="2"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Введите Email"
+          required
         />
       </div>
       <div>
-        <label for="num ">Оценка</label>
-        <input type="number" name="num" id="num" min="1" max="5" step="1" />
+        <img src="./images/telegram.svg" alt="Иконка телеграмм" />
+        <label for="telegram">Telegram</label>
+        <input
+          type="text"
+          name="telegram"
+          id="telegram"
+          placeholder="telegram"
+          required
+        />
       </div>
-      <div><label for="text">Комментарий</label>
-      <textarea name="text" id="text" placeholder="Комментарий"></textarea>
-      <button>Искать на youtube</button>
+      <div>
+        <img src="./images/topic.svg" alt="Иконка комментария" />
+        <label for="topic">Тема</label>
+        <select name="topic" id="topic" required>
+          <optgroup label="Выберете тему">
+            <option value="1" selected>Приобретение курсов</option>
+            <option value="2">Обратная связь</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <label for="comment">Комментарий</label>
+        <textarea
+          cols="76"
+          rows="5"
+          name="comment"
+          id="comment"
+          placeholder="Введите текст"
+        >
+Хочу купить ваши курсы для своих сотрудников и они станут очень умными. Направьте, пожалуйста, свои реквизиты для выставления счета. Хочу купить ваши курсы для своих сотрудников и они станут очень умными. Направьте, пожалуйста, свои реквизиты для выставления счета.</textarea
+        >
+
+      </div>
+
+      <button type="submit">Отправить</button>
     </form>
   </body>
 </html>
