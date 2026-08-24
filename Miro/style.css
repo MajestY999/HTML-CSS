@@ -1,12 +1,23 @@
-label {
-  color: red;
-}
-
 h1 {
-  color: green;
+  color: #fafafa;
 }
 
-div {
-  background-color: bisque; /*Так что лучше использовать свойства в виде background-color для цвета и другие свойства background*/
-  /* background-color: #ff0000; */ /*сокращенное css свойство background устанавливает сразу все свойства стиля фона, такие как цвет, изображение, источник и размер, или метод повтора.*/
+main {
+  background-color: #1e1f29;
+}
+
+input,
+textarea,
+select {
+  background: #2e2d3d;
+  color: #fafafa;
+}
+
+label {
+  color: #afb2bf;
+}
+
+button{
+  color: #fafafa;
+  background-color: #6c38cc;
 }

@@ -4,58 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Свяжитесь со мной</h1>
-    <form action="#">
-      <div>
-        <img src="./images/message.svg" alt="Email" />
-        <label for="email" >E-mail</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Введите Email"
-          required
-        />
-      </div>
-      <div>
-        <img src="./images/telegram.svg" alt="Иконка телеграмм" />
-        <label for="telegram">Telegram</label>
-        <input
-          type="text"
-          name="telegram"
-          id="telegram"
-          placeholder="telegram"
-          required
-        />
-      </div>
-      <div>
-        <img src="./images/topic.svg" alt="Иконка комментария" />
-        <label for="topic">Тема</label>
-        <select name="topic" id="topic" required>
-          <optgroup label="Выберете тему">
-            <option value="1" selected>Приобретение курсов</option>
-            <option value="2">Обратная связь</option>
-          </optgroup>
-        </select>
-      </div>
-      <div>
-        <label for="comment">Комментарий</label>
-        <textarea
-          cols="76"
-          rows="5"
-          name="comment"
-          id="comment"
-          placeholder="Введите текст"
-        >
+    <main>
+      <h1>Свяжитесь со мной</h1>
+      <form action="#">
+        <div>
+          <img src="./images/message.svg" alt="Email" />
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Введите Email"
+            required
+          />
+        </div>
+        <div>
+          <img src="./images/telegram.svg" alt="Иконка телеграмм" />
+          <label for="telegram">Telegram</label>
+          <input
+            type="text"
+            name="telegram"
+            id="telegram"
+            placeholder="telegram"
+            required
+          />
+        </div>
+        <div>
+          <img src="./images/topic.svg" alt="Иконка комментария" />
+          <label for="topic">Тема</label>
+          <select name="topic" id="topic" required>
+            <optgroup label="Выберете тему">
+              <option value="1" selected>Приобретение курсов</option>
+              <option value="2">Обратная связь</option>
+            </optgroup>
+          </select>
+        </div>
+        <div>
+          <label for="comment">Комментарий</label>
+          <textarea
+            cols="76"
+            rows="5"
+            name="comment"
+            id="comment"
+            placeholder="Введите текст"
+          >
 Хочу купить ваши курсы для своих сотрудников и они станут очень умными. Направьте, пожалуйста, свои реквизиты для выставления счета. Хочу купить ваши курсы для своих сотрудников и они станут очень умными. Направьте, пожалуйста, свои реквизиты для выставления счета.</textarea
-        >
-      </div>
+          >
+        </div>
 
-      <button type="submit">Отправить</button>
-    </form>
+        <button type="submit">Отправить</button>
+      </form>
+    </main>
   </body>
 </html>
