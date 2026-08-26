@@ -1,9 +1,11 @@
-h1 {
-  color: #fafafa;
-}
-
 main {
   background-color: #1e1f29;
+}
+
+h1 {
+  color: #fafafa;
+  font-size: 36px;
+  font-weight: bold;
 }
 
 input,
@@ -11,13 +13,17 @@ textarea,
 select {
   background: #2e2d3d;
   color: #fafafa;
+  /* line-height:;   Используется для для задания высоты строки и межстрочного интервала (интерлиньяжа)*/
+  line-height: 150%;
+  /* font-weight: ;  используется для задания толщины (насыщенности) линий символов текста*/
+  /* font-style: ; */
 }
 
 label {
   color: #afb2bf;
 }
 
-button{
+button {
   color: #fafafa;
   background-color: #6c38cc;
 }
