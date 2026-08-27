@@ -28,3 +28,8 @@ button {
   color: #fafafa;
   background-color: #6c38cc;
 }
+
+
+input[type="email"]{
+  background: red;
+}
