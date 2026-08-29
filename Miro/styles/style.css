@@ -1,5 +1,3 @@
-
-
 #heroButton {
   background-color: #4262ff;
   color: #ffff;
@@ -31,17 +29,14 @@
 ul li:last-child{
   color: red;
 } */
-
+/* 
 ul li:nth-child(3n - 1) {
   color: red;
 }
 
 ul li:nth-last-child(3n) {
   color: blue;
-}
-
-
-
+} */
 
 /* odd выберает только не четные 
     even выбирает только четные
@@ -58,16 +53,20 @@ h2 {
 
 /* псевдоэлементы используют 2 :: точки, а псевдоклассы 1 :  */
 
-a::after{
+/* a::after {
   color: red;
-  content: '!';
-}
-
+  content: "";
+} */
+/* 
 a::selection{
 background-color: #071766;
-}
-
-/*before используется до элемента, а after после. цвет использовать не обязательно. но в контент тогда нужно чтото напистаь например '!'*/
+}     
+позволяет применить стили к части документа, 
+который был выделен пользователем (например, с помощью мыши).*/
+/*before используется до элемента,
+ а after после. цвет использовать не обязательно,
+ но в контент тогда нужно чтото написать например '!', так как в консоле будет писать
+  что у нас есть упстое значение которое нужно заполнить ну или просто не обрабатываться(работать). */
 
 p {
   font-weight: 400;
@@ -101,7 +100,20 @@ header a {
   line-height: 20px;
   color: #050038;
 }
-
+/* 
 .heroForm input:focus {
   background-color: aliceblue;
+} */
+
+nav ul {
+  list-style: none;
+}
+/*list-style-position, 
+  list-style-image, 
+  list-style-type 
+  это тоже самое только у нас написано кратко*/
+.sectionList {
+  list-style:  url(../images/check.svg);
+  
+  
 }
