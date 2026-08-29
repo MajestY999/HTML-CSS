@@ -1,3 +1,5 @@
+
+
 #heroButton {
   background-color: #4262ff;
   color: #ffff;
@@ -38,6 +40,9 @@ ul li:nth-last-child(3n) {
   color: blue;
 }
 
+
+
+
 /* odd выберает только не четные 
     even выбирает только четные
     3n -  то есть каждый третий
@@ -50,6 +55,19 @@ h2 {
   line-height: 56px;
   font-weight: 400;
 }
+
+/* псевдоэлементы используют 2 :: точки, а псевдоклассы 1 :  */
+
+a::after{
+  color: red;
+  content: '!';
+}
+
+a::selection{
+background-color: #071766;
+}
+
+/*before используется до элемента, а after после. цвет использовать не обязательно. но в контент тогда нужно чтото напистаь например '!'*/
 
 p {
   font-weight: 400;
