@@ -6,10 +6,8 @@ h1 {
   color: #fafafa;
   font-size: 48px;
   font-weight: 400;
-  font-family: 'Roboto', Arial, sans-serif ;
+  font-family: "Roboto", Arial, sans-serif;
 }
-
-
 
 input,
 textarea,
@@ -22,6 +20,15 @@ select {
   /* font-style: ; */
 }
 
+input:invalid {
+  background: red;
+}
+
+input:valid{
+  background: green;
+}
+
+
 label {
   color: #afb2bf;
 }
@@ -31,7 +38,7 @@ button {
   background-color: #6c38cc;
 }
 
-
+/* 
 input[type="email"]{
   background: red;
-}
+} */
