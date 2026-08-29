@@ -112,8 +112,22 @@ nav ul {
   list-style-image, 
   list-style-type 
   это тоже самое только у нас написано кратко*/
-.sectionList {
-  list-style:  url(../images/check.svg);
-  
-  
+
+ul li {
+  list-style: none;
+}
+
+/* .sectionList{
+list-style:none
+  list-style: url(../images/check.svg);
+} */
+
+/* .sectionList li::before{
+list-style:none
+  content: url(../images/check.svg);
+} */
+
+.sectionList li::marker {
+  list-style: none;
+  content: url(../images/check.svg);
 }
