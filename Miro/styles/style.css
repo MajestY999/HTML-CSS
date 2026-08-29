@@ -3,11 +3,11 @@
   color: #ffff;
 }
 
-#heroButton:hover{
+#heroButton:hover {
   background-color: #122db6;
 }
 
-#heroButton:active{
+#heroButton:active {
   background-color: #071766;
 }
 .link {
@@ -22,15 +22,27 @@
   /*Это означает что этот линк будет наведен*/
   color: #122db6;
 }
-ul li:first-child{
+/* ul li:first-child{
   color: #4262ff;
 }
 
 ul li:last-child{
   color: red;
+} */
+
+ul li:nth-child(3n - 1) {
+  color: red;
 }
 
+ul li:nth-last-child(3n) {
+  color: blue;
+}
 
+/* odd выберает только не четные 
+    even выбирает только четные
+    3n -  то есть каждый третий
+     3n -1 означает что будем использовать каждый  четный элемент
+    */
 
 h1,
 h2 {
@@ -44,6 +56,10 @@ p {
   font-size: 18px;
   line-height: 24px;
 }
+
+/* p:not(.sectionText){
+  color: red;
+} */
 
 .heroText {
   color: #050038;
@@ -68,7 +84,6 @@ header a {
   color: #050038;
 }
 
-
-.heroForm input:focus{
-background-color: aliceblue;
+.heroForm input:focus {
+  background-color: aliceblue;
 }
