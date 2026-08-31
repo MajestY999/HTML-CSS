@@ -74,6 +74,22 @@ p {
   line-height: 24px;
 }
 
+.experimentRed {
+  background: red;
+}
+
+/* .experimentBlue {
+  background: blue;
+} */
+
+div.experimentBlue {
+  background: #050038;
+}
+
+#exp {
+  background: #4262ff;
+}
+
 /* p:not(.sectionText){
   color: red;
 } */
@@ -131,3 +147,16 @@ list-style:none
   list-style: none;
   content: url(../images/check.svg);
 }
+
+/*Вес правила. 
+
+div: 0.0.1;
+.class: 0.1.0;
+#id: 1.0.0;
+div .test: 0.1.1;
+.test > ul#id > a: 1.1.2;
+div:hover: 0.1.1
+
+
+0.0.0- такие цифры означают вес селектора то есть его очередность или преимущество над другим 
+*/
