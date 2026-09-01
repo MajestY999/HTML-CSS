@@ -92,23 +92,24 @@ p {
 } */
 
 .experimentBlue {
-  background: blue;
+  background: #071766;
   width: 200px;
   height: 400px;
   color: white;
+  padding: 10px 20px 50px;
+  border: 5px solid #696688;
 }
 
-
+/* 
 .border1 {
   /* border-width: 5px;
   border-style: solid;
   border-color: #050038; */
-  border: 5px solid #050038; /* Тоже самое написание чо и выше просто кратко и в одну строчку вместо 3 значений все в одном. */
-  /* border-left: 10px solid #071766; */
+/* border: 5px solid #050038; /* Тоже самое написание чо и выше просто кратко и в одну строчку вместо 3 значений все в одном. */
+/* border-left: 10px solid #071766; */
 
-  /* box-sizing: border-box; если чтото не понятно все етсь в mdn */
-  border-radius: 25px;
-}
+/* box-sizing: border-box; если чтото не понятно все етсь в mdn */
+/* border-radius: 25px;  }*/
 
 /* #exp {
   background: #4262ff;
@@ -117,7 +118,6 @@ p {
 /* p:not(.sectionText){
   color: red;
 } */
-
 
 .heroText {
   color: #050038;
