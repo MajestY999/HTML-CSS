@@ -10,6 +10,15 @@
 #heroButton:active {
   background-color: #071766;
 }
+/* 
+body{
+  color: blueviolet;
+} */
+
+/* button{
+   background-color: #ffff ;
+   } /*   !important */
+
 .link {
   color: #4262ff;
   text-decoration: underline;
@@ -82,13 +91,16 @@ p {
   background: blue;
 } */
 
-div.experimentBlue {
-  background: #050038;
+.experimentBlue {
+  background: blue;
+  width: 400px;
+  height: 300px;
+  color: white;
 }
 
-#exp {
+/* #exp {
   background: #4262ff;
-}
+} */
 
 /* p:not(.sectionText){
   color: red;
