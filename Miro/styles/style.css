@@ -93,9 +93,21 @@ p {
 
 .experimentBlue {
   background: blue;
-  width: 400px;
-  height: 300px;
+  width: 200px;
+  height: 400px;
   color: white;
+}
+
+
+.border1 {
+  /* border-width: 5px;
+  border-style: solid;
+  border-color: #050038; */
+  border: 5px solid #050038; /* Тоже самое написание чо и выше просто кратко и в одну строчку вместо 3 значений все в одном. */
+  /* border-left: 10px solid #071766; */
+
+  /* box-sizing: border-box; если чтото не понятно все етсь в mdn */
+  border-radius: 25px;
 }
 
 /* #exp {
@@ -105,6 +117,7 @@ p {
 /* p:not(.sectionText){
   color: red;
 } */
+
 
 .heroText {
   color: #050038;
