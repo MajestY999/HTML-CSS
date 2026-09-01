@@ -1,3 +1,101 @@
+h1 {
+  margin: 0 0 17px 0;
+}
+
+h1,
+h2 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 400;
+}
+
+nav {
+  padding: 33px 55px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 60px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* margin-top: 8px;
+  margin-bottom: 0px; */
+}
+
+footer {
+  background-color: #050038;
+  padding: 47px 40px;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+footer div{
+  color: white;
+}
+
+.heroForm input {
+  height: 38px;
+  border-radius: 32px;
+  border: 1px solid #9b99af;
+  padding: 5px 10px;
+}
+
+.heroForm button {
+  height: 51px;
+  border-radius: 32px;
+  border: 1px solid;
+  padding: 10px 20px;
+}
+
+.heroText {
+  color: #050038;
+  margin: 0 0 55px 0;
+}
+
+.sectionText {
+  color: rgba(5, 0, 56, 0.6);
+  margin: 0 0 40px 0;
+}
+
+header a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #050038;
+}
+
+.heroForm + p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #050038;
+  margin: 8px 0px 52px 0px;
+}
+/* 
+.heroForm input:focus {
+  background-color: aliceblue;
+} */
+
+/* ul li {
+  list-style: none;
+} */
+
+.sectionList li::marker {
+  list-style: none;
+  content: url(../images/check.svg);
+}
+
 #heroButton {
   background-color: #4262ff;
   color: #ffff;
@@ -31,159 +129,3 @@ body{
   /*Это означает что этот линк будет наведен*/
   color: #122db6;
 }
-/* ul li:first-child{
-  color: #4262ff;
-}
-
-ul li:last-child{
-  color: red;
-} */
-/* 
-ul li:nth-child(3n - 1) {
-  color: red;
-}
-
-ul li:nth-last-child(3n) {
-  color: blue;
-} */
-
-/* odd выберает только не четные 
-    even выбирает только четные
-    3n -  то есть каждый третий
-     3n -1 означает что будем использовать каждый  четный элемент
-    */
-
-h1,
-h2 {
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 400;
-}
-
-/* псевдоэлементы используют 2 :: точки, а псевдоклассы 1 :  */
-
-/* a::after {
-  color: red;
-  content: "";
-} */
-/* 
-a::selection{
-background-color: #071766;
-}     
-позволяет применить стили к части документа, 
-который был выделен пользователем (например, с помощью мыши).*/
-/*before используется до элемента,
- а after после. цвет использовать не обязательно,
- но в контент тогда нужно чтото написать например '!', так как в консоле будет писать
-  что у нас есть упстое значение которое нужно заполнить ну или просто не обрабатываться(работать). */
-
-p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.experimentRed {
-  background: red;
-}
-
-/* .experimentBlue {
-  background: blue;
-} */
-
-.experimentBlue {
-  background: #071766;
-  width: 200px;
-  height: 400px;
-  color: white;
-  padding: 10px 20px 50px;
-  border: 5px solid #696688;
-  /* margin: 30px 20px 40px 10px; */
-  
-}
-
-/* 
-.border1 {
-  /* border-width: 5px;
-  border-style: solid;
-  border-color: #050038; */
-/* border: 5px solid #050038; /* Тоже самое написание чо и выше просто кратко и в одну строчку вместо 3 значений все в одном. */
-/* border-left: 10px solid #071766; */
-
-/* box-sizing: border-box; если чтото не понятно все етсь в mdn */
-/* border-radius: 25px;  }*/
-
-/* #exp {
-  background: #4262ff;
-} */
-
-/* p:not(.sectionText){
-  color: red;
-} */
-
-.heroText {
-  color: #050038;
-}
-
-.sectionText {
-  color: rgba(5, 0, 56, 0.6);
-}
-
-header a {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-decoration: none;
-  color: #050038;
-}
-
-.heroForm + p {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #050038;
-}
-/* 
-.heroForm input:focus {
-  background-color: aliceblue;
-} */
-
-nav ul {
-  list-style: none;
-}
-/*list-style-position, 
-  list-style-image, 
-  list-style-type 
-  это тоже самое только у нас написано кратко*/
-
-ul li {
-  list-style: none;
-}
-
-/* .sectionList{
-list-style:none
-  list-style: url(../images/check.svg);
-} */
-
-/* .sectionList li::before{
-list-style:none
-  content: url(../images/check.svg);
-} */
-
-.sectionList li::marker {
-  list-style: none;
-  content: url(../images/check.svg);
-}
-
-/*Вес правила. 
-
-div: 0.0.1;
-.class: 0.1.0;
-#id: 1.0.0;
-div .test: 0.1.1;
-.test > ul#id > a: 1.1.2;
-div:hover: 0.1.1
-
-
-0.0.0- такие цифры означают вес селектора то есть его очередность или преимущество над другим 
-*/
