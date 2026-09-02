@@ -1,12 +1,24 @@
-main {
+/* main {
   background-color: #1e1f29;
+} */
+
+body {
+  background-color: #1e1f29;
+}
+
+main {
+  border-radius: 10px;
+  background-color: #1e1f29;
+  padding: 48px;
 }
 
 h1 {
   color: #fafafa;
   font-size: 48px;
   font-weight: 400;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0 0 32px 0;
 }
 
 input,
@@ -18,25 +30,78 @@ select {
   line-height: 150%;
   /* font-weight: ;  используется для задания толщины (насыщенности) линий символов текста*/
   /* font-style: ; */
+  font-weight: 400;
+  font-size: 16px;
+  font-family: sans-serif;
+  padding: 27px 48px 12px;
+  border: none;
+  border-radius: 10px;
 }
 
-input:invalid {
-  background: red;
+.field {
+  margin-bottom: 16px;
+  position: relative;
 }
 
-input:valid{
-  background: green;
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: #4a4863;
+  font-size: 16px;
 }
-
 
 label {
+  position: absolute;
+  /* color: #afb2bf; */
+  top: 12px;
+  left: 48px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
   color: #afb2bf;
 }
 
 button {
   color: #fafafa;
   background-color: #6c38cc;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 400;
 }
+
+.field img{
+  position: absolute;
+  top: 17px;
+  left: 16px;
+}
+/* input#email {
+  background-image: url(./images/message.svg);
+  background-repeat: no-repeat;
+}
+
+#email {
+  border: none;
+  border-radius: 10px;
+  width: 250px;
+  height: 58px;
+  font-size: 12px;
+}
+
+#telegram {
+  border: none;
+  border-radius: 10px;
+  width: 250px;
+  height: 58px;
+  font-size: 12px;
+}
+input#telegram {
+  background-image: url(./images/telegram.svg);
+  background-repeat: no-repeat;
+} */
 
 /* 
 input[type="email"]{
