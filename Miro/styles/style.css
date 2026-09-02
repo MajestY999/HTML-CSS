@@ -34,12 +34,12 @@ footer {
   padding: 47px 40px;
 }
 
-footer a{
+footer a {
   color: white;
   text-decoration: none;
 }
 
-footer div{
+footer div {
   color: white;
 }
 
@@ -128,4 +128,50 @@ body{
 .link:hover {
   /*Это означает что этот линк будет наведен*/
   color: #122db6;
+}
+
+.divR {
+  background: red;
+  display: inline;
+}
+
+.divB {
+  background: blue;
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.divG {
+  background: green;
+  display: inline;
+}
+
+.spanR {
+  background: red;
+  display: inline-block;
+   padding: 20px;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.spanB {
+  background: blue;
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.spanG {
+  background: green;
+  display: inline-block;
+   padding: 20px;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
 }
