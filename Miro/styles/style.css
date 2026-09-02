@@ -130,48 +130,62 @@ body{
   color: #122db6;
 }
 
-.divR {
+.cl1 {
   background: red;
-  display: inline;
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
 }
 
-.divB {
+.cl2 {
   background: blue;
   display: inline-block;
   padding: 20px;
   margin: 20px;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 
-.divG {
+.cl3 {
   background: green;
-  display: inline;
-}
-
-.spanR {
-  background: red;
-  display: inline-block;
-   padding: 20px;
-  margin: 20px;
-  width: 200px;
-  height: 200px;
-}
-
-.spanB {
-  background: blue;
   display: inline-block;
   padding: 20px;
   margin: 20px;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 
-.spanG {
-  background: green;
-  display: inline-block;
-   padding: 20px;
-  margin: 20px;
-  width: 200px;
-  height: 200px;
+.static .cl2 {
+  position: static;
 }
+
+.relative .cl2 {
+  position: relative; /*Теперь можно использовать top, left, right, bottom которые можно относительно позиционировать наш div*/
+  top: 50px;
+  left: -50px;
+}
+.absolute {
+  position: relative;
+}
+
+.absolute .cl2 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+/* .fixed .cl2 {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+} */
+
+.sticky .cl2{
+position: sticky;
+   top: 50px;
+  left: 50px;
+  
+}
+/*display: none; просто убирает элемент из вида */
