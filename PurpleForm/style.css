@@ -6,6 +6,10 @@ body {
   background-color: #1e1f29;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 main {
   border-radius: 10px;
   background-color: #1e1f29;
@@ -36,6 +40,8 @@ select {
   padding: 27px 48px 12px;
   border: none;
   border-radius: 10px;
+  width: 50%;
+  height: 50%;
 }
 
 .field {
@@ -73,11 +79,18 @@ button {
   font-weight: 400;
 }
 
-.field img{
+.field img {
   position: absolute;
   top: 17px;
   left: 16px;
 }
+
+
+/*Em  при font-size: 
+1. 1em - это величина  шрифта родителя
+2. 3em - в 3 раза больше значения
+
+Для других значение - рассчитанная величина шрифт самого элемента. */
 /* input#email {
   background-image: url(./images/message.svg);
   background-repeat: no-repeat;
@@ -106,4 +119,12 @@ input#telegram {
 /* 
 input[type="email"]{
   background: red;
-} */
+} 
+  
+absolute ищет ближайшего родителя, у которого position НЕ static 
+(то есть relative, absolute, fixed или sticky). 
+Если нашёл — позиционируется от него. Если нет — от всей страницы.
+
+.field — это родитель. У него position: relative. Значит, 
+он говорит своим детям: «Эй, если вы absolute — считайте координаты от МЕНЯ, 
+а не от всей страницы!»*/
