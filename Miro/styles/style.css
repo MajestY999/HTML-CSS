@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -109,12 +109,15 @@ header a {
 #heroButton {
   background-color: #4262ff;
   color: #ffff;
+  transition:
+    background-color 2s ,
+    border-radius  2s ;
 }
 
 #heroButton:hover {
   background-color: #122db6;
+  border-radius: 50%;
 }
-
 #heroButton:active {
   background-color: #071766;
 }
@@ -139,37 +142,8 @@ body{
   /*Это означает что этот линк будет наведен*/
   color: #122db6;
 }
-/* #hero {
-  font-size: 15px;
+
+footer {
+  height: 100vh;
+  width: 100vw;
 }
-
-h1 {
-  font-size: 3em;
-}
-
-.heroText {
-  font-size: 2em;
-}
-
-#heroButton {
-  height: 48px;
-  border: 1px solid #4262ff;
-  border-radius: 32px;
-  padding: 10px 20px;
-  font-size: 1em;
-} */
-/* 
-ul > li{
-  font-size: 2rem;
-  margin-bottom: 1rem;
-} */
-
-/*Когда мы используме какой-либо адаптив нам надо понимать относительно чего мы будем уменьшатся? точно ли относительно нашего текущего эелемента. */
-
-/* html{
-  font-size: 10px;
-} */
- footer{
-height: 100vh;
-width: 100vw;
- }
