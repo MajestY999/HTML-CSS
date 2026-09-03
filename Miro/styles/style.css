@@ -92,14 +92,6 @@ header a {
   color: #050038;
   margin: 8px 0px 52px 0px;
 }
-/* 
-.heroForm input:focus {
-  background-color: aliceblue;
-} */
-
-/* ul li {
-  list-style: none;
-} */
 
 .sectionList li::marker {
   list-style: none;
@@ -128,30 +120,43 @@ header a {
   background-color: #050038;
   margin: 10px;
   transition: margin-left 2s;
+  color: white;
+  font-size: 24px;
+  /* transform: translateX(-300px);
+  transition: transform 1s; */
 }
 
 .exp div:nth-child(1) {
-  margin-left: 400px;
-  transition-timing-function: ease-out;
+  transform: rotate(45deg);
+  transform-origin: left bottom;
 }
 
 .exp div:nth-child(2) {
-  margin-left: 400px;
-  transition-timing-function: ease-in;
+  transform: scale(2, 1);
 }
 
 .exp div:nth-child(3) {
-  margin-left: 400px;
-  transition-timing-function: linear;
+  transform: translateX(300px);
 }
 .exp div:nth-child(4) {
-  margin-left: 400px;
-  transition-timing-function: steps(6, end);
+  transform: skew(10deg);
 }
 .exp div:nth-child(5) {
-  margin-left: 400px;
-  transition-timing-function: cubic-bezier(0.03, 0.72, 0.91, 0.43);
 }
+
+/* margin-left: 400px; */
+/* transition-timing-function: ease-out; 
+   /* margin-left: 400px; */
+/* transition-timing-function: ease-out; */
+/* margin-left: 400px; */
+/* transition-timing-function: ease-in; */
+
+/* margin-left: 400px; */
+/* transition-timing-function: linear; */
+/* margin-left: 400px; */
+/* transition-timing-function: steps(6, end); */
+/* margin-left: 400px; */
+/* transition-timing-function: cubic-bezier(0.03, 0.72, 0.91, 0.43); */
 
 /* 
 body{
@@ -174,8 +179,8 @@ body{
   /*Это означает что этот линк будет наведен*/
   color: #122db6;
 }
-
+/* 
 footer {
   height: 100vh;
   width: 100vw;
-}
+} */
