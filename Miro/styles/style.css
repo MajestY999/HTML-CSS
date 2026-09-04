@@ -143,27 +143,17 @@ header a {
   animation-fill-mode: forwards;
   animation-delay: 1s;
   animation-iteration-count: 2; /*Сколько мы хотим чтобы проиграла наша анимация раз*/
-animation-direction: alternate;/*управление анимацией*/
+  animation-direction: alternate; /*управление анимацией*/
 }
 
-
-.exp:hover div{
-animation-play-state: paused;
-}
-
-@keyframes my-move {
-  25% {
-    transform: translateX(100%);
-  }
-  50% {
-    transform: translateX(100%) translateY(-100%);
-  }
-
-  75% {
-    transform: translateX(0%) translateY(100%);
-  }
-  100% {
-    transform: translateX(0%) translateY(0%);
+@media (min-width: 500px) {
+  h1 {
+    color: red;
   }
 }
 
+@media (max-width: 500px) {
+  h2 {
+    display: none;
+  }
+}
