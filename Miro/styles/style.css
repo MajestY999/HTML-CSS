@@ -48,6 +48,19 @@ footer div {
   color: white;
 }
 
+.link {
+  color: #4262ff;
+  text-decoration: underline;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.link:hover {
+  /*Это означает что этот линк будет наведен*/
+  color: #122db6;
+}
+
 .heroForm input {
   height: 38px;
   border-radius: 32px;
@@ -119,68 +132,38 @@ header a {
   height: 200px;
   background-color: #050038;
   margin: 10px;
-  transition: margin-left 2s;
+  /* transition: margin-left 2s; */
   color: white;
   font-size: 24px;
-  /* transform: translateX(-300px);
-  transition: transform 1s; */
+  /* /* transform: translateX(-300px);/* */
+  /* transition: all 1s;  */
+  animation: my-move 2s ease forwards; /*Это говорит о том как мы должны поступать с этой анимацией.*/
+  animation-name: my-move;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-iteration-count: 2; /*Сколько мы хотим чтобы проиграла наша анимация раз*/
+animation-direction: alternate;/*управление анимацией*/
 }
 
-.exp div:nth-child(1) {
-  transform: rotate(45deg);
-  transform-origin: left bottom;
+
+.exp:hover div{
+animation-play-state: paused;
 }
 
-.exp div:nth-child(2) {
-  transform: scale(2, 1);
+@keyframes my-move {
+  25% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(100%) translateY(-100%);
+  }
+
+  75% {
+    transform: translateX(0%) translateY(100%);
+  }
+  100% {
+    transform: translateX(0%) translateY(0%);
+  }
 }
 
-.exp div:nth-child(3) {
-  transform: translateX(300px);
-}
-.exp div:nth-child(4) {
-  transform: skew(10deg);
-}
-.exp div:nth-child(5) {
-}
-
-/* margin-left: 400px; */
-/* transition-timing-function: ease-out; 
-   /* margin-left: 400px; */
-/* transition-timing-function: ease-out; */
-/* margin-left: 400px; */
-/* transition-timing-function: ease-in; */
-
-/* margin-left: 400px; */
-/* transition-timing-function: linear; */
-/* margin-left: 400px; */
-/* transition-timing-function: steps(6, end); */
-/* margin-left: 400px; */
-/* transition-timing-function: cubic-bezier(0.03, 0.72, 0.91, 0.43); */
-
-/* 
-body{
-  color: blueviolet;
-} */
-
-/* button{
-   background-color: #ffff ;
-   } /*   !important */
-
-.link {
-  color: #4262ff;
-  text-decoration: underline;
-  line-height: 24px;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.link:hover {
-  /*Это означает что этот линк будет наведен*/
-  color: #122db6;
-}
-/* 
-footer {
-  height: 100vh;
-  width: 100vw;
-} */
