@@ -14,6 +14,8 @@ main {
   border-radius: 10px;
   background-color: #1e1f29;
   padding: 48px;
+  max-width: 500px;
+  min-width: 375px;
 }
 
 h1 {
