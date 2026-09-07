@@ -13,8 +13,10 @@ body {
   border: 10px solid #6c38cc;
   display: flex;
   /* height: 550px; */
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row nowrap; /*Используется когда нам нужен например ряд или нужно переносить или нет. */
+  
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
 }
 
 .item {
@@ -24,7 +26,7 @@ body {
   width: calc(100% / 3);
   padding: 10px;
 }
-
+/* 
 .item9 {
   order: -1;
 }
@@ -35,4 +37,4 @@ body {
 
 .item4 {
   order: 2;
-}
+} */
