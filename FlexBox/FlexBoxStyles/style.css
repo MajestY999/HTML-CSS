@@ -13,17 +13,20 @@ body {
   border: 10px solid #6c38cc;
   display: flex;
   /* height: 550px; */
-  flex-flow: row nowrap; /*Используется когда нам нужен например ряд или нужно переносить или нет. */
-  
-  /* flex-direction: row; */
+  /* flex-flow: row nowrap; Используется когда нам нужен например ряд или нужно переносить или нет. */
+  height: 200vh;
+  flex-direction: column;
   /* flex-wrap: wrap; */
+  justify-content: space-between; /*space-between Равномерно распределяет все элементы по ширине flex-блока.Первый элемент вначале, последний в конце*/
+  /*space-around: Равномерно распределяет все элементы по ширине flex-блока. Все элементы имеют полноразмерное пространство с обоих концов */
+  /*space-evenly: Равномерно распределяет все элементы по ширине flex-блока. Все элементы имеют равное пространство вокруг*/
+  /*justify-content: stretch; /* Равномерно распределяет все элементы по ширине flex-блока. Все элементы имеют "авто-размер", чтобы соответствовать контейнеру */
 }
 
 .item {
   background: #232228;
   border: 1px solid #6c38cc;
   text-align: center;
-  width: calc(100% / 3);
   padding: 10px;
 }
 /* 
