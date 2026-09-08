@@ -13,15 +13,14 @@ body {
   border: 10px solid #6c38cc;
   display: flex;
   height: 100vh;
-  flex-wrap: wrap;
+  align-items: flex-start;
   /* align-content: flex-end; */
-
   /*space-between Равномерно распределяет все элементы по ширине flex-блока.Первый элемент вначале, последний в конце*/
   /*space-around: Равномерно распределяет все элементы по ширине flex-блока. Все элементы имеют полноразмерное пространство с обоих концов */
   /*space-evenly: Равномерно распределяет все элементы по ширине flex-блока. Все элементы имеют равное пространство вокруг*/
   /*justify-content: stretch; /* Равномерно распределяет все элементы по ширине flex-блока. Все элементы имеют "авто-размер", чтобы соответствовать контейнеру */
-  justify-content: center;
-  align-content: center;
+  /* justify-content: center;
+  align-content: center; */
 }
 
 .item {
@@ -29,5 +28,9 @@ body {
   border: 1px solid #6c38cc;
   text-align: center;
   padding: 10px;
-  width: calc(100% / 3);
+
+}
+
+.item2{
+  align-self: center;
 }
