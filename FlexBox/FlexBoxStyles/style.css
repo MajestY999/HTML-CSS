@@ -12,12 +12,10 @@ body {
 .container {
   border: 10px solid #6c38cc;
   display: flex;
-  /* height: 550px; */
-  /* flex-flow: row nowrap; Используется когда нам нужен например ряд или нужно переносить или нет. */
-  height: 200vh;
-  flex-direction: column;
-  /* flex-wrap: wrap; */
-  justify-content: space-between; /*space-between Равномерно распределяет все элементы по ширине flex-блока.Первый элемент вначале, последний в конце*/
+  height: 100vh;
+  align-items: baseline;
+  justify-content: center;
+  /*space-between Равномерно распределяет все элементы по ширине flex-блока.Первый элемент вначале, последний в конце*/
   /*space-around: Равномерно распределяет все элементы по ширине flex-блока. Все элементы имеют полноразмерное пространство с обоих концов */
   /*space-evenly: Равномерно распределяет все элементы по ширине flex-блока. Все элементы имеют равное пространство вокруг*/
   /*justify-content: stretch; /* Равномерно распределяет все элементы по ширине flex-блока. Все элементы имеют "авто-размер", чтобы соответствовать контейнеру */
@@ -29,15 +27,11 @@ body {
   text-align: center;
   padding: 10px;
 }
-/* 
-.item9 {
-  order: -1;
-}
-
-.item2 {
-  order: 1;
-}
 
 .item4 {
-  order: 2;
-} */
+  font-size: 40px;
+}
+
+.item8 {
+  font-size: 120px;
+}
