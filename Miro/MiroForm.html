@@ -21,71 +21,113 @@
     </header>
     <main>
       <section id="hero">
-        <h1 class="heroTitle">Место для командой работы</h1>
-        <p class="heroText">
-          Интерактивная онлайн-доска для совместной <br />
-          работы команд — в любое время, в любом месте.
-        </p>
+        <div class="wrapper">
+          <div class="hero-content">
+            <h1 class="heroTitle">Место для <br />командой <br />работы</h1>
+            <p class="heroText">
+              Интерактивная онлайн-доска для совместной <br />
+              работы команд — в любое время, в любом месте.
+            </p>
 
-        <form action="/register" method="get" class="heroForm">
-          <input type="email" id="email" name="email" />
-          <button id="heroButton">Начать бесплатно</button>
-        </form>
-        <p class="">Всё бесплатно — кредитная карта не нужна</p>
-        <img src="./images/Picture1png.png" alt="Работа приложения Miro" />
+            <form action="/register" method="get" class="heroForm">
+              <input type="email" id="email" name="email" />
+              <button id="heroButton">Начать бесплатно</button>
+            </form>
+            <p>Всё бесплатно — кредитная карта не нужна</p>
+            <div class="heroRow">
+              <p class="heroUsers">45M+ пользователей</p>
+              <img src="./images/spons.svg" alt="" />
+            </div>
+          </div>
+          <div class="heroImage">
+            <img src="./images/Picture1png.png" alt="Работа приложения Miro" />
+          </div>
+        </div>
       </section>
-      <section>
-        <h2>
-          Работайте вместе,<br />
-          где бы вы ни <br />
-          находились
-        </h2>
-        <p class="sectionText">
-          Работая в офисе, удалённо или в гибридном <br />
-          формате, с Miro ваша команда может общаться, <br />
-          сотрудничать и совместно заниматься <br />творчеством в одном
-          пространстве, из любой <br />точки мира.
-        </p>
-        <a href="#" class="link">Узнать больше</a>
-        <img src="./images/IMAGE.png" alt="Работа в команде" />
+      <section id="collab">
+        <div class="collabWrapper">
+          <div class="collabContent">
+            <h2 class="collabTitle">
+              Работайте вместе,<br />
+              где бы вы ни <br />
+              находились
+            </h2>
+            <p class="collabText">
+              Работая в офисе, удалённо или в гибридном <br />
+              формате, с Miro ваша команда может общаться, <br />
+              сотрудничать и совместно заниматься <br />творчеством в одном
+              пространстве, из любой <br />точки мира.
+            </p>
+            <a href="#" class="link">Узнать больше</a>
+          </div>
+          <div class="collabImage">
+            <img src="./images/IMAGE.png" alt="Работа в команде" />
+          </div>
+        </div>
       </section>
-      <section>
-        <img src="./images/IMAGE2.png" alt="Работа в самом приложении" />
-        <h2>
-          Закройте лишние <br />вкладки — всё <br />
-          уже здесь
-        </h2>
-        <p class="sectionText">
-          Редактируете ли вы документы в Google Docs,<br />
-          работаете над задачами в Jira или <br />
-          созваниваетесь в Zoom, Miro предлагает более <br />100 интеграций с
-          уже известными и <br />
-          полюбившимися вам инструментами.
-        </p>
-        <a href="#" class="link">Узнать больше</a>
+      <section id="integrations">
+        <div class="integrationWrapper">
+          <div class="integrationImage">
+            <img src="./images/IMAGE2.png" alt="Работа в самом приложении" />
+          </div>
+          <div class="integrationContent">
+            <h2>
+              Закройте лишние <br />вкладки — всё <br />
+              уже здесь
+            </h2>
+            <p class="integrationsText">
+              Редактируете ли вы документы в Google Docs,<br />
+              работаете над задачами в Jira или <br />
+              созваниваетесь в Zoom, Miro предлагает более <br />100 интеграций
+              с уже известными и <br />
+              полюбившимися вам инструментами.
+            </p>
+            <a href="#" class="link">Узнать больше</a>
+          </div>
+        </div>
       </section>
-      <section>
-        <h2>Создан для всех типов команд</h2>
-        <ul class="sectionList">
-          <li>Создайте вайрфреймы</li>
-          <li>Подключите заказчиков к процессу дизайна</li>
-          <li>Прводите вовлекающие дизайн-воркшопы</li>
-          <ul class="sectionList">
-            <li>Создайте вайрфреймы</li>
-            <li>Подключите заказчиков к процессу дизайна</li>
-            <li>Прводите вовлекающие дизайн-воркшопы</li>
-          </ul>
-        </ul>
-      </section>
-      <section class="exp">
-        <div>DIV1</div>
+      <section id="team">
+        <div class="teamTitleButtons">
+          <h2 class="teamTitle">Создан для всех типов команд</h2>
+          <button class="teamButton designButton">UX и дизайн</button>
+          <button class="teamButton">Маркетинг</button>
+          <button class="teamButton product">Управление продуктом</button>
+          <button class="teamButton">Разработка</button>
+          <button class="teamButton">Колсалтинг</button>
+          <button class="teamButton">Agile-коучинг</button>
+          <button class="teamButton">Продажи</button>
+        </div>
+        <div class="wrapperTeam">
+          <div class="teamText">
+            <ul class="teamList">
+              <li>Создайте вайрфреймы</li>
+              <li>Подключите заказчиков к процессу дизайна</li>
+              <li>Проводите вовлекающие дизайн-воркшопы</li>
+            </ul>
+            <a href="#" class="link teamLink">Узнать больше</a>
+            <p class="teamSubtext">
+              Интегрируйте ваши любимые <br />
+              инструменты
+            </p>
+          </div>
+          <div class="teamImage">
+            <img
+              src="./images/TeamWork.png"
+              alt="Работа в команде над проектом"
+            />
+          </div>
+        </div>
       </section>
     </main>
     <footer>
-      <div>© 2023 Miro</div>
-      <a href="#">Условия пользования</a>
-      <a href="#">Политика конфиденциальности</a>
-      <a href="#">Управление файлами cookies</a>
+      <div class="wrapperFooter">
+        <div class="copyraight">© 2023 Miro</div>
+        <div class="footer-links">
+          <a href="#">Условия пользования</a>
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Управление файлами cookies</a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
