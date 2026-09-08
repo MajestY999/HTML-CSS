@@ -12,6 +12,9 @@ body {
 .container {
   border: 10px solid #6c38cc;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .item {
@@ -20,24 +23,18 @@ body {
   text-align: center;
   padding: 10px;
   flex-basis: 300px;
+  flex-grow: 1;
 }
 
-.item1 {
-  flex: 1 1 300px;
-  /*flex-grow: 1; flex-shrink: 1; flex-basic: 300px */
-  /* flex-grow: 1;
+.item4 {
+  flex-grow: 15;
+}
+
+/* flex: 1 1 300px; */
+/*flex-grow: 1; flex-shrink: 1; flex-basic: 300px */
+/* flex-grow: 1;
   flex-basic: 300px;
   flex-shrink: 1; */
-}
-
-.item2 {
-  flex: 5 2 100px;
-  /* flex-grow: 5;
-  flex-basis: 100px;
-  flex-shrink: 2;  */
-
-  /*Означает что на пять раз в ментше мы должны занимать свободного места, то есть если будет значение 1 ничего не поменяется*/
-}
 
 /* align-content: flex-end; */
 /*space-between Равномерно распределяет все элементы по ширине flex-блока.Первый элемент вначале, последний в конце*/
