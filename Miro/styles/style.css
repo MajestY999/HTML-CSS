@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
 }
-
+/* 
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/Roboto_Condensed-Regular.ttf);
-}
+} */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -73,8 +73,13 @@ p {
 #collab .collabWrapper {
   display: flex;
   justify-content: space-around;
-  margin: 0 auto;
+  margin: 0px 0px 200px 0px;
 }
+
+.collabcontent{
+  margin: 0px 0px 90px 0px;
+}
+
 
 footer {
   background-color: #050038;
@@ -199,9 +204,8 @@ header a {
   background-color: white;
 }
 
-
-.teamButton:first-of-type{
-  margin: 0px 0px 0px 70px
+.teamButton:first-of-type {
+  margin: 0px 0px 0px 70px;
 }
 
 .teamTitle {
@@ -267,12 +271,21 @@ header a {
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0px 0px 94px 0px;
   gap: 40px;
 }
 
+.integrationContent h2{
+display: block;
+margin: 0px 0px 19px 0px;
+
+}
+
+
+
 .integrationImage {
   margin-bottom: 94px;
+  margin-left: 120px;
 }
 
 .integrationsText {
