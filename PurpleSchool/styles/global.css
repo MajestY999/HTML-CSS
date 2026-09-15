@@ -1,5 +1,6 @@
 :root {
   --color-primary: #6c38cc;
+  --color-primary-hover: #5b2bb2;
   --space-10: 10px;
   --color-text: #fafafa;
   --color-link-hover: #afb2bf;
@@ -8,10 +9,16 @@
   --color-bg-light: #2e2d3d;
   --color-stroke: #4d5064;
   --border-8: 8px;
-}
-
-html {
-  --color-primary: green;
+  --border-10: 10px;
+  /* --color-base: #fafafa;
+  --color-btn: #6C38CC; */
+  --layout-width: 1172px;
+  --gradient: linear-gradient(
+    93.33deg,
+    #d77be6 9.26%,
+    #be63e6 42.32%,
+    #6c38cc 104.58%
+  );
 }
 
 body {
