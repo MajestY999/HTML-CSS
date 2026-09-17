@@ -24,6 +24,12 @@
   --color-footer: #101114;
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-box-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 * {
   box-sizing: border-box;
 }
