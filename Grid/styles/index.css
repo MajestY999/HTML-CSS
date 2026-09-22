@@ -53,18 +53,30 @@ body {
 
 .wrapper {
   display: grid; /*fr можно подрузомевать как часть*/
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(500px, 1fr)
-  ); /*fill строит нам grid пока он может нам дать место для посмтройки элементов но fit как только элеемнты кончаются элементы строго встают рядом друг с другом и больше не строит и не оставляет пустое место*/
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  /* grid-template-columns: repeat(3, 100px); */
+  grid-template-rows: repeat(10, 100px);
   gap: 15px;
+  /*justify: отвечате за выравнивание по основной оси(горизонтальное выравнивание). 
+   align: отвечает вертикальное выравнивание по дополнительной оси 
+   items, content, self.
+   */
+  justify-items: center;
+  /* align-items: center; убрав этот элемент у нас эти элементы становтся stretch */
+  justify-content: start;
 }
 
-.item_1 {
-  order: 1;
-  grid-column: 1 / -1;
+.item_9 {
+ justify-self: end;
+ align-self: start;
 }
 
-.item_2 {
-  order: 3;
-}
+
+/*
+a
+l
+i
+g
+n
+*/
+/*justify*/
