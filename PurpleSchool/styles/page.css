@@ -34,9 +34,20 @@
   gap: 32px;
 }
 
-.button-more{
-  
+.button-more {
   text-align: center;
+}
+
+.chip_wrapper {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.courses_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
 }
 
 @media (max-width: 1200px) {
